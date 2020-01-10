@@ -1,2 +1,5 @@
 # pwf_filedialog
-Filedialog using Python with web front-end
+###### _macOS, Python 3.8.1, websockets 8.1_  
+Mini project to learn how to implement a file dialog using Python with a web front-end.  
+
+**Status:** Work in progress
