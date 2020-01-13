@@ -11,6 +11,7 @@ async def dialogwindow(websocket, path):
         try:
             data = await websocket.recv()
             if data == 'click':
+#                print("Click!")
                 response = await fd()
                 await websocket.send(response)
             else:
@@ -24,10 +25,11 @@ async def dialogwindow(websocket, path):
 
 async def fd():
     root = tkinter.Tk()
+    root.attributes("-topmost", True)
     root.withdraw()
 
     file_path = filedialog.askopenfile()
-    print(file_path.name)
+#    print(file_path.name)
 
     return file_path.name
 
